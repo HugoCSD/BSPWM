@@ -33,13 +33,13 @@ At **modules-right** variable add **hcsd-battery** (example):
 And add the following lines to the end of the file:
 
 ```
-<SPAN "style=color: #DB9532">[module/hcsd-battery]</SPAN>
-<SPAN "style=color: #6E59D9">type</SPAN> = custom/script
-<SPAN "style=color: #6E59D9">tail </SPAN>= true
-<SPAN "style=color: #6E59D9">interval </SPAN>= 5
-<SPAN "style=color: #6E59D9">interval-fail </SPAN>= 60
-<SPAN "style=color: #6E59D9"><SPAN "style=color: #6E59D9">format-prefix-foreground </SPAN>= ${colors.primary}
-<SPAN "style=color: #6E59D9">exec </SPAN>= /PATH/TO/POLYBAR/PLUGINS/hcsd-battery.sh
+[module/hcsd-battery]
+type = custom/script
+tail = true
+interval = 5
+interval-fail = 60
+format-prefix-foreground = ${colors.primary}
+exec = /PATH/TO/POLYBAR/PLUGINS/hcsd-battery.sh
 ```
 
 
