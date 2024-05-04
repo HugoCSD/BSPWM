@@ -27,7 +27,6 @@ At **modules-right** variable add **hcsd-battery** (example):
 
 ```
  modules-right = filesystem hcsd-battery pulseaudio memory wlan date
-
 ```
 
 And add the following lines to the end of the file:
@@ -70,18 +69,20 @@ suspendSecs=30
 
 # notify-send values (icon, title, text)
 # Your system may not have the indicated icon
-zntWarnTitle='Clitical battery state'
-zntWarnTxt='Connect charger'
-zntWarnIcon='/usr/share/icons/Adwaita/symbolic/status/battery-level-0-symbolic.svg'
-zntCriticalTitle='Clitical battery state'
-zntCriticalTxt="<b>$host</b> will go into suspend mode in $suspendSecs seconds"
-zntCriticalIcon='/usr/share/icons/Adwaita/symbolic/status/battery-level-0-symbolic.svg'
+
+
+---
+sndWarnTitle='Clitical battery state'
+sndWarnTxt='Connect charger'
+sndWarnIcon='/usr/share/icons/Adwaita/symbolic/status/battery-level-0-symbolic.svg'
+sndCriticalTitle='Clitical battery state'
+sndCriticalTxt="<b>$host</b> will go into suspend mode in $suspendSecs seconds"
+sndCriticalIcon='/usr/share/icons/Adwaita/symbolic/status/battery-level-0-symbolic.svg'
 
 # Sound that play will play
 Your system may not have the indicated sound
 playWarnSound='/usr/lib/libreoffice/share/gallery/sounds/drama.wav'
 playCriticalSound='/usr/lib/libreoffice/share/gallery/sounds/drama.wav'
-
 ```
 
 
